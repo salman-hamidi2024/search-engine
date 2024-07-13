@@ -12,7 +12,9 @@ for file_name in path:
     open_ai = open(full_file,"r")
     data = open_ai.read()
     open_ai.close()
-    search  = re.search(full_file,user_input)
-    print(f"your search found in {full_file}")
-    print("content:")
-    print(data)
+    if re.search(full_file,user_input):
+        print(f"your search found in {full_file}")
+        print("content:")
+        print(data)
+else:
+    print(f"not found {user_input}")
