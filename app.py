@@ -1,6 +1,6 @@
 import os
 import re
-os.system('clear')
+os.system('cls')
 user_input = input("what do you want: ")
 
 path = os.listdir("dickens")
